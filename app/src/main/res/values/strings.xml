@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Profile Page</string>
+    <string name="soulpaints">SOULPAINTS</string>
+    <string name="shopping_cart">Shopping Cart</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="search">Search</string>
+    <string name="exhibit">EXHIBIT</string>
+    <string name="categories">CATEGORIES</string>
+    <string name="home">HOME</string>
+    <string name="profile">PROFILE</string>
+    <string name="help">Help Center</string>
+    <string name="settings">Settings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="madonnapainting">madonnaPainting</string>
+    <string name="madonna_child"><![CDATA[MADONNA & CHILD]]></string>
+    <string name="giovanni_bellini">Giovanni Bellini</string>
+    <string name="giovanniDescription">Beautifully preserved, this small picture epitomises the finest works produced in Bellini’s workshop for private devotion.</string>
+    <string name="rs_15_000">Rs. 15,000</string>
+    <string name="add_to_cart">ADD TO CART</string>
+    <string name="wishlist_button">Wishlist Button</string>
+    <string name="backbutton">BackButton</string>
+    <string name="background_pattern">Background Pattern</string>
+    <string name="profile_image">Profile Image</string>
+    <string name="juan_escobar">Juan Escobar</string>
+    <string name="ordericon">orderIcon</string>
+    <string name="wishlisticon">wishlistIcon</string>
+    <string name="orders">Orders</string>
+    <string name="check_your_order_status">Check your order status</string>
+    <string name="helpicon">HelpIcon</string>
+    <string name="forward_arrow">Forward Arrow</string>
+    <string name="your_most_loved_artworks">Your most loved artworks</string>
+    <string name="help_regarding_your_purchases_faqs">Help regarding your purchases, FAQs</string>
+    <string name="manage_your_profile_and_app_settings">Manage your profile and app settings</string>
+    <string name="deals_of_the_day">DEALS OF THE DAY</string>
+    <string name="backimage">backImage</string>
+    <string name="top_categories">TOP CATEGORIES</string>
+    <string name="prev">PREV</string>
+    <string name="next">NEXT</string>
+    <string name="image_view">image view</string>
+    <string-array name="categoryHead">
+        <item>SHOP ALL</item>
+        <item>ABSTRACT</item>
+        <item>GREEK</item>
+        <item>MODERN</item>
+        <item>MINIMAL</item>
+        <item>LANDSCAPE</item>
+        <item>WATER</item>
+        <item>OIL</item>
+        <item>GRAPHITES</item>
+    </string-array>
+</resources>

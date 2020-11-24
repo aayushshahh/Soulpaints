@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profileFragment">
+
+    <ScrollView
+        android:id="@+id/main_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFCFF">
+
+            <TextView
+                android:id="@+id/header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/josefin_sans"
+                android:text="@string/profile"
+                android:textColor="#9B9B9B"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="372dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="24dp"
+                app:cardBackgroundColor="#FFFCFF"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/header">
+
+                <ImageView
+                    android:id="@+id/backgroundPattern"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/background_pattern"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pattern" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/profileImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="124dp"
+                app:cardBackgroundColor="#FFFCFF"
+                app:cardCornerRadius="50dp"
+                app:cardElevation="0dp"
+                app:contentPadding="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/header">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/profile_image"
+                    android:src="@drawable/profileimage" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="183dp"
+                android:fontFamily="@font/josefin_sans"
+                android:text="@string/juan_escobar"
+                android:textColor="#1B1B1E"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@+id/profileImage"
+                app:layout_constraintTop_toBottomOf="@+id/header" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/orders"
+                android:layout_width="372dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="40dp"
+                app:cardBackgroundColor="#FFFCFF"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profileImage">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/orderIcon"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:contentDescription="@string/ordericon"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_orders"
+                        app:tint="#696969" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="22dp"
+                        android:fontFamily="@font/josefin_sans"
+                        android:text="@string/orders"
+                        android:textColor="#1B1B1E"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@+id/orderIcon"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/josefin_sans_light"
+                        android:text="@string/check_your_order_status"
+                        android:textColor="#696969"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toEndOf="@+id/orderIcon"
+                        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+                    <ImageView
+                        android:id="@+id/forwardImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginRight="12dp"
+                        android:contentDescription="@string/forward_arrow"
+                        android:scaleX="-1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_back"
+                        app:tint="#696969" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/wishlist"
+                android:layout_width="372dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="12dp"
+                app:cardBackgroundColor="#FFFCFF"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.505"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/orders">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/wishlistIcon"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:contentDescription="@string/wishlisticon"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_wishlist"
+                        app:tint="#696969" />
+
+                    <TextView
+                        android:id="@+id/wishlistText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="22dp"
+                        android:fontFamily="@font/josefin_sans"
+                        android:text="@string/wishlist"
+                        android:textColor="#1B1B1E"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@+id/wishlistIcon"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/wishlistdesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/josefin_sans_light"
+                        android:text="@string/your_most_loved_artworks"
+                        android:textColor="#696969"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toEndOf="@+id/wishlistIcon"
+                        app:layout_constraintTop_toBottomOf="@+id/wishlistText" />
+
+                    <ImageView
+                        android:id="@+id/forwardImage2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginRight="12dp"
+                        android:contentDescription="@string/forward_arrow"
+                        android:scaleX="-1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_back"
+                        app:tint="#696969" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/helpCenter"
+                android:layout_width="372dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="12dp"
+                app:cardBackgroundColor="#FFFCFF"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/wishlist">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/helpIcon"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:contentDescription="@string/helpicon"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_help"
+                        app:tint="#696969" />
+
+                    <TextView
+                        android:id="@+id/helpText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="22dp"
+                        android:fontFamily="@font/josefin_sans"
+                        android:text="@string/help"
+                        android:textColor="#1B1B1E"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@+id/helpIcon"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/helpdesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/josefin_sans_light"
+                        android:text="@string/help_regarding_your_purchases_faqs"
+                        android:textColor="#696969"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toEndOf="@+id/helpIcon"
+                        app:layout_constraintTop_toBottomOf="@+id/helpText" />
+
+                    <ImageView
+                        android:id="@+id/forwardImage3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginRight="12dp"
+                        android:contentDescription="@string/forward_arrow"
+                        android:scaleX="-1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_back"
+                        app:tint="#696969" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/settings"
+                android:layout_width="372dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="12dp"
+                app:cardBackgroundColor="#FFFCFF"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/helpCenter">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/settingsIcon"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:contentDescription="@string/wishlisticon"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_settings"
+                        app:tint="#696969" />
+
+                    <TextView
+                        android:id="@+id/settingsText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="22dp"
+                        android:fontFamily="@font/josefin_sans"
+                        android:text="@string/settings"
+                        android:textColor="#1B1B1E"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@+id/settingsIcon"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/settingsdesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/josefin_sans_light"
+                        android:text="@string/manage_your_profile_and_app_settings"
+                        android:textColor="#696969"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toEndOf="@+id/settingsIcon"
+                        app:layout_constraintTop_toBottomOf="@+id/settingsText" />
+
+                    <ImageView
+                        android:id="@+id/forwardImage4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginRight="12dp"
+                        android:contentDescription="@string/forward_arrow"
+                        android:scaleX="-1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_back"
+                        app:tint="#696969" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/bottomPadding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/settings" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</FrameLayout>
